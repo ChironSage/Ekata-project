@@ -26,6 +26,13 @@
     href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
     rel="stylesheet">
 
+  <!--
+    -fa-angle-down
+    Bottom arrow in the nav bar for drop down
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xxx" crossorigin="anonymous" />
+
+
   <!-- 
     - preload images
   -->
@@ -49,7 +56,7 @@
         <div class="navbar-top">
           <a href="#" class="logo">EKATA</a>
 
-          <button class="nav-close-btn" aria-label="Clsoe menu" data-nav-toggler>
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
             <ion-icon name="close-outline"></ion-icon>
           </button>
         </div>
@@ -60,15 +67,16 @@
             <a href="#about" class="navbar-link" data-nav-link>
               <span>About Us</span>
 
-              <ion-icon name="chevron-forward"></ion-icon>
+              <ion-icon name="chevron-down"></ion-icon>
             </a>
           </li>
 
           <li class="navbar-item dropdown">
             <a href="#Logistics" class="navbar-link" data-nav-link>
-              <span>Logistics</span>
-
-              <ion-icon name="chevron-forward"></ion-icon>
+              Logistics
+              <!-- <ion-icon name="chevron-down"></ion-icon> -->
+              <!-- <span class="fas fa-chevron-down" aria-hidden="true"></span> -->
+              <i class="fas fa-angle-down"></i>
             </a>
             <div class="dropdown-contentL">
               <ul>
@@ -86,8 +94,7 @@
           <li class="navbar-item dropdown">
             <a href="#IT&Automation" class="navbar-link" data-nav-link>
               <span>IT & Automation</span>
-
-              <ion-icon name="chevron-forward"></ion-icon>
+              <i class="fas fa-angle-down"></i>
             </a>
             <div class="dropdown-contentIT">
               <ul>
@@ -101,7 +108,7 @@
           <li class="navbar-item dropdown">
             <a href="#FreightForwarding" class="navbar-link" data-nav-link>
               <span>Freight Forwarding</span>
-
+              <i class="fas fa-angle-down"></i>
               <ion-icon name="chevron-forward"></ion-icon>
             </a>
             <div class="dropdown-contentFF">
@@ -118,7 +125,7 @@
           <li class="navbar-item">
             <a href="#ValueAdded" class="navbar-link" data-nav-link>
               <span>Value Added</span>
-
+              <i class="fas fa-angle-down"></i>
               <ion-icon name="chevron-forward"></ion-icon>
             </a>
             <div class="dropdown-contentVA">
@@ -135,7 +142,7 @@
           <li class="navbar-item">
             <a href="#Project" class="navbar-link" data-nav-link>
               <span>Project</span>
-
+              <i class="fas fa-angle-down"></i>
               <ion-icon name="chevron-forward"></ion-icon>
             </a>
             <div class="dropdown-contentP">
@@ -177,7 +184,7 @@
           <div class="hero-content">
 
             <h2 class="h1 hero-title">
-              <span class="span">Bridging Distances, <br><span class="fostering">Fostering Connections...</span></span> 
+              <span class="span">Your Trust, <br><span class="fostering">Our Efforts...</span></span> 
             </h2>
 
           </div>
@@ -202,7 +209,7 @@
 
             
 
-            <img src="./assets/images/about-shape-2.png" width="500" height="500" loading="lazy" alt=""
+            <img src="./assets/images/about-shape-3a.png" width="400" height="400" loading="lazy" alt=""
               class="abs-img abs-img-2">
           </figure>
 
@@ -445,6 +452,7 @@
                 <p class="card-text">
                   Our aim is to optimize and improve your supply chain so that we can give you the best service.
                 </p>
+                
 
                 <a href="#" class="btn-link">
                   <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
@@ -459,107 +467,6 @@
 
         </div>
       </section>
-
-
-
-
-
-      <!-- 
-        - #FEATURE
-      -->
-
-      <section class="section feature" aria-label="feature">
-        <div class="container">
-
-          <div class="title-wrapper">
-
-            <div>
-              <p class="section-subtitle">Estimation</p>
-
-              <h2 class="h2 section-title">Has a wide range of solutions</h2>
-
-              <p class="section-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry the standard dummy text ever
-                since the when an
-                printer took.
-              </p>
-            </div>
-
-            <a href="#" class="btn">Read More</a>
-
-          </div>
-
-          <ul class="feature-list grid-list">
-
-            <li>
-              <div class="feature-card" style="--card-number: '01'">
-
-                <div class="card-icon">
-                  <img src="./assets/images/feature-icon-1.png" width="72" height="91" alt="">
-                </div>
-
-                <h3 class="h3 card-title">Solutions and specialized</h3>
-
-                <p class="card-text">
-                  Our aim is to optimize and improve your supply chain so that we can give you the best service
-                </p>
-
-                <a href="#" class="card-btn" aria-label="Read more">
-                  <ion-icon name="arrow-forward"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="feature-card" style="--card-number: '02'">
-
-                <div class="card-icon">
-                  <img src="./assets/images/feature-icon-2.png" width="94" height="94" alt="">
-                </div>
-
-                <h3 class="h3 card-title">Multiple warehouses</h3>
-
-                <p class="card-text">
-                  We provide multiple drop off and pickup locations so you don't have to worry. And you should not face
-                  any kind...
-                </p>
-
-                <a href="#" class="card-btn" aria-label="Read more">
-                  <ion-icon name="arrow-forward"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="feature-card" style="--card-number: '03'">
-
-                <div class="card-icon">
-                  <img src="./assets/images/feature-icon-3.png" width="93" height="93" alt="">
-                </div>
-
-                <h3 class="h3 card-title">Tracking made easy</h3>
-
-                <p class="card-text">
-                  A tracking number for the entire process. so that you can find the exact position. this process will
-                  help you
-                </p>
-
-                <a href="#" class="card-btn" aria-label="Read more">
-                  <ion-icon name="arrow-forward"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
 
 
       <!-- 
@@ -892,39 +799,10 @@
 
         <div class="footer-brand">
 
-          <a href="#" class="logo">Transportio</a>
+          <a href="#" class="logo">EKATA</a>
 
           <p class="footer-text">
-            Many desktop publishing packages and web page editors now use are dolra Ipsum as their default.
-          </p>
-
-          <ul class="social-list">
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-youtube"></ion-icon>
-              </a>
-            </li>
-
-          </ul>
+            Discover a world of unmatched excellence in transportation with Ekata—your trusted partner in delivering unparalleled service, reliability, and seamless connectivity for every journey.</p>
 
         </div>
 
@@ -935,19 +813,19 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">About</a>
+            <a href="#" class="footer-link">Home</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Services</a>
+            <a href="#" class="footer-link">About Us</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Blog</a>
+            <a href="#" class="footer-link">Network</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">FAQ</a>
+            <a href="#" class="footer-link">Trade Partners</a>
           </li>
 
           <li>
@@ -963,11 +841,15 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Warehouse</a>
+            <a href="#" class="footer-link">Warehousing</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Air Freight</a>
+            <a href="#" class="footer-link">Transportation</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Rail Freight</a>
           </li>
 
           <li>
@@ -975,11 +857,35 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Road Freight</a>
+            <a href="#" class="footer-link">Air Freight</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <!-- <li>
+            <p class="footer-list-title">Community</p>
+          </li> -->
+
+          <li>
+            <a href="#" class="footer-link">Export Services</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Packaging</a>
+            <a href="#" class="footer-link">Custom Clearance </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Post Shipment</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Documentation</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Product Installation</a>
           </li>
 
         </ul>
@@ -987,27 +893,27 @@
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Community</p>
+            <p class="footer-list-title">Contact Details</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Business Consulting</a>
+            <a href="#" class="footer-link">Home</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Testimonials</a>
+            <a href="#" class="footer-link">About Us</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Track Your Shipment</a>
+            <a href="#" class="footer-link">Network</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Trade Partners</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Terms & Condition</a>
+            <a href="#" class="footer-link">Contact Us</a>
           </li>
 
         </ul>
