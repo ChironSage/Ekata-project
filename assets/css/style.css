@@ -722,28 +722,54 @@ body {
 .service .section-title { margin-block-end: 20px; }
 
 .service .section-text { margin-block-end: 50px; }
+.services{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+/* #second, #forth, #sixth{
+  background-color: #8b85ab ;
+} */
 .service-card {
-  background-color: var(--white);
-  padding: 30px;
-  /* border: 50px 50px 50px 50px solid var(--cultured-3); */
-
-  transition: var(--transition);
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50% 50% 50% 50%;
+  background-color: #170c57;
+  /* background-color: #191970; */
+  color: whitesmoke;
+  box-shadow: 5px 10px 11px #787681 ;
 
 }
 
-.service-card:is(:hover, :focus-within) { border-color: var(--dark-orange); }
+.service-card:is(:hover, :focus-within) { border-color: var(--dark-orange);
 
-.service-card .card-icon { margin-block-end: 30px; }
+}
+
+/* .service-card .card-icon { margin-block-end: ; } */
+
+.service-card .card-title{
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-size: 20px;
+}
 
 .service-card .card-title .span {
   display: inline-block;
-  color: var(--dark-orange);
+  color: #8b85ab;
   font-size: var(--fs-3);
   margin-inline-end: 15px;
 }
 
-.service-card .card-text { margin-block: 10px 20px; }
+.service-card .card-text {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 20px;
+  text-align: center;
+}
 
 
 
