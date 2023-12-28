@@ -1,0 +1,469 @@
+<!--
+    Air Freight page (optionL4-Logistics)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EKATA - Air Freight</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../css/airfreight.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!--
+    -fa-angle-down
+    Bottom arrow in the nav bar for drop down
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xxx" crossorigin="anonymous" />
+
+
+  <!-- 
+    - preload images
+  -->
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">EKATA</a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          
+        <a href="#" class="logo">EKATA</a>
+
+        <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+        </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>
+              <span>About Us</span>
+
+              <ion-icon name="chevron-down"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item dropdown">
+            <a href="#Logistics" class="navbar-link" data-nav-link>
+              Logistics
+              <!-- <ion-icon name="chevron-down"></ion-icon> -->
+              <!-- <span class="fas fa-chevron-down" aria-hidden="true"></span> -->
+              <!-- <i class="fas fa-angle-down"></i> -->
+            </a>
+            <div class="dropdown-contentL">
+              <ul>
+                <li><a href="#optionL1" class="drop-text">Warehousing</a></li>
+                <li><a href="#optionL2" class="drop-text">Transportation</a></li>
+                <li><a href="#optionL3" class="drop-text">Rail Freight</a></li>
+                <li><a href="#optionL4" class="drop-text">Ocean Freight</a></li>
+                <li><a href="#optionL5" class="drop-text">Air Freight</a></li>
+                <li><a href="#optionL6" class="drop-text">Reverse Logistics</a></li>
+                <li><a href="#optionL7" class="drop-text">Inplant Services</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="navbar-item dropdown">
+            <a href="#IT&Automation" class="navbar-link" data-nav-link>
+              <span>IT & Automation</span>
+              <!-- <i class="fas fa-angle-down"></i> -->
+            </a>
+            <div class="dropdown-contentIT">
+              <ul>
+                <li><a href="#optionIT1" class="drop-text">IOT Product Solution</a></li>
+                <li><a href="#optionIT2" class="drop-text">Process</a></li>
+                <li><a href="#optionIT3" class="drop-text">Improvement & Automation</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="navbar-item dropdown">
+            <a href="#FreightForwarding" class="navbar-link" data-nav-link>
+              <span>Freight Forwarding</span>
+              <!-- <i class="fas fa-angle-down"></i> -->
+              <!-- <ion-icon name="chevron-forward"></ion-icon> -->
+            </a>
+            <div class="dropdown-contentFF">
+              <ul>
+                <li><a href="#optionFF1" class="drop-text">Import Services</a></li>
+                <li><a href="#optionFF2" class="drop-text">Export Services</a></li>
+                <li><a href="#optionFF3" class="drop-text">Custom Clearance Activity</a></li>
+                <li><a href="#optionFF4" class="drop-text">Post Shipment Services</a></li>
+                <li><a href="#optionFF5" class="drop-text">Documentation</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="navbar-item dropdown">
+            <a href="#ValueAdded" class="navbar-link" data-nav-link>
+              <span>Value Added</span>
+              <!-- <i class="fas fa-angle-down"></i> -->
+              <!-- <ion-icon name="chevron-forward"></ion-icon> -->
+            </a>
+            <div class="dropdown-contentVA">
+              <ul>
+                <li><a href="#optionVA1" class="drop-text">Labelling</a></li>
+                <li><a href="#optionVA2" class="drop-text">Packaging</a></li>
+                <li><a href="#optionVA3" class="drop-text">Kitting</a></li>
+                <li><a href="#optionVA4" class="drop-text">Product Installation</a></li>
+                <li><a href="#optionVA5" class="drop-text">Management Information System</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="navbar-item dropdown">
+            <a href="#Project" class="navbar-link" data-nav-link>
+              <span>Project</span>
+              <!-- <i class="fas fa-angle-down"></i> -->
+              <!-- <ion-icon name="chevron-forward"></ion-icon> -->
+            </a>
+            <div class="dropdown-contentP">
+              <ul>
+                <li><a href="#optionP1" class="drop-text">Project Logistics</a></li>
+                <li><a href="#optionP2" class="drop-text">Chartering Services</a></li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="home" id="home"
+        style="background-image: url('../images/railfreight-hero.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h2 class="h1 hero-title">
+              <span class="span">Your Trust, <br><span class="fostering">Our Efforts...</span></span> 
+            </h2>
+
+          </div>
+
+        </div>
+      </section>
+
+
+    
+
+
+      <!-- 
+        - #ABOUT
+      -->
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner img-holder" style="--width: 850; --height: 1200;">
+            <img src="../images/railfreight-about.jpg" width="850" height="1200" loading="lazy" 
+              class="img-cover">
+
+            
+
+            <img src="../images/about-shape-3a.png" width="400" height="400" loading="lazy" 
+              class="abs-img abs-img-2">
+          </figure>
+
+          <div class="about-content">
+
+            <h1 class="section-subtitle"> Air Freight </h1>
+
+            <p class="h2 section-title">Welcome to Ekata SCS Air Freight...</p>
+
+            <p class="section-text">
+                Soar to new heights with Ekata SCS Air Freight, where speed, efficiency, and global connectivity converge to elevate your cargo transportation experience. As your airborne logistics partner, Ekata ensures your goods take the express route to any destination worldwide.
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+
+                <p class="about-text">
+                  <b>Velocity Redefined:</b> Ekata Air Freight propels your shipments at unmatched speeds. Experience the fastest route to your destination with our expedited and time-sensitive air transportation solutions.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+
+                <p class="about-text">
+                  <b>Global Reach:</b> Navigate the skies effortlessly with Ekata. Our extensive air network spans the globe, connecting you to major destinations worldwide. From metropolises to remote locations, we bridge the gap with seamless aerial logistics.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+
+                <p class="about-text">
+                  <b>Reliability at Altitude:</b> Trust Ekata for impeccable reliability. Our air freight services prioritize punctuality, ensuring your cargo arrives precisely when and where it's needed. Rely on us for time-critical shipments with confidence.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+
+                <p class="about-text">
+                  <b>Secure and Efficient Handling:</b> Ekata's air freight services come with a commitment to secure and efficient handling. Our streamlined processes and state-of-the-art facilities guarantee the safe passage of your goods from departure to arrival.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+
+                <p class="about-text">
+                  <b>Tailored Solutions:</b> Whether it's urgent shipments with express services or cost-effective options for standard cargo, Ekata provides customized air freight solutions to suit your specific needs. Enjoy flexibility without compromising on speed or quality.
+                </p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-icon">
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </div>
+
+                <p class="about-text">
+                    Embark on a journey of speed and precision with Ekata Air Freight. Explore the boundless possibilities of global trade as we take your cargo to new heights, setting the standard for airborne logistics excellence.
+                </p>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top section">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">EKATA</a>
+
+          <p class="footer-text">
+            Discover a world of unmatched excellence in transportation with Ekata—your trusted partner in delivering unparalleled service, reliability, and seamless connectivity for every journey.</p>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Quick Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Network</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Trade Partners</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Warehousing</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Transportation</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Rail Freight</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Ocean Freight</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Air Freight</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <!-- <li>
+            <p class="footer-list-title">Community</p>
+          </li> -->
+
+          <li>
+            <a href="#" class="footer-link">Export Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Custom Clearance </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Post Shipment</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Documentation</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Product Installation</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Details</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Network</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Trade Partners</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2022 Transportio. All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
