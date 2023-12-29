@@ -291,6 +291,7 @@ body {
   text-align: center;
   line-height: 1.2;
   margin-inline-start: auto;
+  right: 500px;
  }
 
  .header .signup {
@@ -764,12 +765,14 @@ body {
   background-color: #170c57;
   /* background-color: #191970; */
   color: whitesmoke;
-  box-shadow: 5px 10px 11px #787681 ;
+  /* box-shadow: 5px 10px 11px #787681 ; */
 
 }
 
-.service-card:is(:hover, :focus-within) { border-color: var(--dark-orange);
-
+.service-card:is(:hover, :focus-within) { 
+  border-color: var(--dark-orange);
+  box-shadow: 0px 0px 11px 4px #787681;
+  transform: scale(1.12);
 }
 
 /* .service-card .card-icon { margin-block-end: ; } */
