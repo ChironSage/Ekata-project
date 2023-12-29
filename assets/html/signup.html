@@ -1,6 +1,159 @@
 <!--
     Sign Up Page
 -->
-    <form>
-        
-    </form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Transportation Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .register-container {
+            background-color: #170C57;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .register-container h2 {
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .register-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+      color:white;
+        }
+
+        .form-group {
+            text-align: left;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            color: #555; /* Text color for input fields */
+        }
+       .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            color: #555; /* Text color for input fields */
+        }
+
+
+        .form-group button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h2>EKATA SUPPLY CHAIN</h2>
+        <form class="register-form" id="registerForm">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+               <div class="form-group">
+                <label for="email">Mobile Number:</label>
+                 <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{10}" placeholder="" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+               <div class="form-group">
+                <label for="logistics">Services:</label>
+                <select id="logistics" name="logistics" required>
+                    <option value="" disabled selected>Select Services</option>
+                    <option value="Warehousing">Warehousing</option>
+                    <option value="Transportation">Transportation</option>
+                    <option value="Rail Freight">Rail Freight</option>
+                   <option value="Ocean Freight">Ocean Freight</option>
+                   <option value="Air Freight">Air Freight</option>
+                   <option value="Revsrese logistics">Reverse Logistics</option>
+                   <option value="Implant Services">implant Services</option>
+                   <option value="Import Services">Import Services</option>
+                  <option value="Export Services">Export Services</option>
+                  <option value="Custom Clearance Activity">Custom Clearance Activity</option>
+                  <option value="Post Shipment Services">Post Shipment Services</option>
+                  <option value="licences">licences</option>
+                  <option value="Labelling">Labelling</option>
+                  <option value="Packaging">Packaging</option>
+                  <option value="Kitting">Kitting</option>
+                  <option value="Product Installation">Product Installation</option>
+                  <option value="Management Information System">Management Information System</option>
+                  <option value="Project Logistics">Project Logistics</option>
+                  <option value="Chartering Services">Chartering Services</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="validateRegistration()"><a href ="otp.html">Register</a></button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function validateRegistration() {
+            var fullName = document.getElementById('fullName').value;
+            var email = document.getElementById('email').value;
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Perform client-side validation (you should also do server-side validation)
+            if (fullName && email && username && password) {
+                alert('Registration successful!');
+                // Redirect to the login page or perform other actions
+            } else {
+                alert('Please fill in all the required fields.');
+            }
+        }
+    </script>
+</body>
+</html>
