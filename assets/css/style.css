@@ -291,6 +291,7 @@ body {
   text-align: center;
   line-height: 1.2;
   margin-inline-start: auto;
+  right: 500px;
  }
 
  .header .signup {
