@@ -586,7 +586,7 @@
   
   .hero {
     position: relative;
-    min-height: 100vh;
+    min-height: 60vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -636,6 +636,12 @@
   /*-----------------------------------*\
     #ABOUT
   \*-----------------------------------*/
+  
+.about .container{
+  margin-top: -80px;
+  margin-bottom: -80px;
+}
+  
   
   .about-banner {
     position: relative;

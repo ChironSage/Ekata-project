@@ -99,7 +99,9 @@
   box-sizing: border-box;
 }
 
-li { list-style: none; }
+li { 
+  list-style: none;
+}
 
 a {
   text-decoration: none;
@@ -340,9 +342,13 @@ body {
 .nav-open-btn {
   color: var(--white);
   font-size: 35px;
+  position: absolute;
+  right:5% ;
 }
 
-.nav-open-btn ion-icon { --ionicon-stroke-width: 40px; }
+.nav-open-btn ion-icon { 
+  --ionicon-stroke-width: 40px; 
+}
 
 .navbar {
   position: fixed;
@@ -623,6 +629,68 @@ body {
   z-index: 1;
 }
 
+#home{
+
+  background-image: linear-gradient(45deg, 
+  rgba(245,70,66, 0.4), 
+  rgba(8,83,156, 0.4)), url('../images/homepage_heroimg2.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.ekata{
+  position: absolute;
+  top: 32%;
+  left: 25%;
+}
+
+.ekata h1{
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 15rem;
+ letter-spacing: 12rem;
+ color: rgb(255, 255, 255);
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ text-shadow: 
+ 20px 0px 20px rgb(34, 33, 33),   
+ 0px 0px 0px rgb(34, 33, 33), 
+ 0px 20px 20px rgb(33, 33, 34),   
+ 0px 0px 0px rgb(34, 33, 33);  
+}
+@media(max-width: 998px)
+{
+  .akata h1{
+
+    font-size: 55%;
+  }
+}
+
+@media(max-width: 768px)
+{
+  .ekata{
+    top: 41%;
+    left: 17%;
+  }
+  .ekata h1{
+    font-size: 8rem;
+    letter-spacing: 7rem;
+  
+  }
+}
+
+@media(max-width: 480px)
+{
+  .ekata{
+    top: 43%;
+    left: 25%;
+  }
+  .ekata h1{
+    font-size: 4rem;
+    letter-spacing:3rem ;
+  
+  }
+} */
+
+
 .hero-content {
   /* background-color: var(--black_60); */
   color: var(--white);
@@ -630,8 +698,26 @@ body {
   padding: 30px;
 }
 
+.hero-content .h1{
+  animation-duration: 0.5s;
+}
+.hero-title{
+  animation-name: slide;
+}
+
+@keyframes slide {
+  from{
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translateX(0%);
+  }
+}
+
 .hero-title {
-  margin-top: 400px;
+  position: absolute;
+  top: 80%;
+
 }
 
 .hero-title .span {
@@ -738,7 +824,11 @@ body {
   #SERVICE
 \*-----------------------------------*/
 
-.service { background-color: var(--alice-blue); }
+.service { 
+  background-image: url('../images/service-bg-img.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .service :is(.section-subtitle, .section-title, .section-text) { text-align: center; }
 
@@ -748,6 +838,11 @@ body {
 .services{
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.service-list li{
+  display: flex;
   justify-content: center;
 }
 

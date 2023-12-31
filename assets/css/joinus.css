@@ -1,0 +1,54 @@
+/* Add your existing styles and other styles above */
+
+/* Sliding toggle switch button styles */
+.sliding-toggle-switch {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .sliding-toggle-switch input {
+    display: none;
+  }
+  
+  .sliding-toggle-switch label {
+    display: block;
+    width: 60px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+    background-color: #170c57;
+    border-radius: 15px; /* Adjust as needed */
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sliding-toggle-switch .switch-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    user-select: none;
+  }
+  
+  .sliding-toggle-switch input:checked + label {
+    background-color: #8b85ab;
+  }
+  
+  .sliding-toggle-switch label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .sliding-toggle-switch input:checked + label::before {
+    transform: translateX(30px) translateY(-50%);
+  }
+  
+  /* Add your existing styles and other styles below */
+  
