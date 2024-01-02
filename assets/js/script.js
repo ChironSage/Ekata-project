@@ -30,16 +30,24 @@ for (let i = 0; i < navLinks.length; i++) {
 /**
  * header
  */
+// document.getElementById('navbar-placeholder').innerHTML = '<object type="text/html" data="navbar.html" ></object>';
 
 const header = document.querySelector("[data-header]");
+const dropdown_name = document.querySelectorAll(".dropdown-name")
 const backTopBtn = document.querySelector("[data-back-top-btn]");
 
 window.addEventListener("scroll", function () {
   if (window.scrollY >= 100) {
     header.classList.add("active");
+    dropdown_name.forEach(function(dropdown_name) {
+      dropdown_name.classList.add('overlayed');
+    });
     backTopBtn.classList.add("active");
   } else {
     header.classList.remove("active");
+    dropdown_name.forEach(function(dropdown_name) {
+      dropdown_name.classList.remove('overlayed');
+    });
     backTopBtn.classList.remove("active");
   }
 });

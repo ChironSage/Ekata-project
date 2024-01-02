@@ -319,7 +319,7 @@ body {
 }
 
 .header {
-  position: fixed;
+  position:fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -329,8 +329,8 @@ body {
 }
 
 .header.active { 
-  background-color: #010e0e;
-  opacity: 0.3;
+  background-color: #ccffff;
+  opacity: 0.8;
  }
 
 .header .container {
@@ -338,6 +338,10 @@ body {
   /*justify-content: space-between;*/
   align-items: center;
   gap: 30px;
+}
+#topNav{
+  visibility: visible;
+  opacity: 1;
 }
 
 /* .logo {
@@ -348,8 +352,8 @@ body {
 } */
 
 .logo img{
-  width: 80px;
-  height: 80px;
+  width: 13.375rem;
+  height: 2.875rem;
 }
 
 .nav-open-btn {
@@ -442,11 +446,14 @@ body {
   opacity: 0.8;
 }
 
-/* Dropdown Styles of Home*/
-/* .dropdown-name{
+/*Dropdown Styles of Home*/
+.dropdown-name.overlayed{
   color: #170c57;
   font-weight: bolder;
-} */
+}
+.dropdown-name{
+  font-weight: bold;
+}
 
 /* Dropdown Styles of Logistics*/
 .dropdown-contentL {
@@ -1324,7 +1331,9 @@ body {
     max-width: unset;
   }
 
-  .header .logo { font-size: 3.5rem; }
+  .header .logo { 
+    font-size: 3.5rem; 
+  }
 
 
 
