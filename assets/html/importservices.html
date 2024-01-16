@@ -9,6 +9,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../images/Asset1000x1000globe.ico" type="image/x-icon">
   <title>EKATA - Import Services</title>
 
   <!-- 
@@ -20,6 +21,15 @@
     - custom css link
   -->
   <link rel="stylesheet" href="../css/importservices.css">
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!--
     - google font link
@@ -48,125 +58,92 @@
     - #HEADER
   -->
 
-  <header class="header" data-header>
-    <div class="container">
-
-      <h1>
-        <a href="#" class="logo">EKATA</a>
-      </h1>
-
-      <nav class="navbar" data-navbar>
-
-        <div class="navbar-top">
-          
-        <a href="#" class="logo">EKATA</a>
-
-        <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
-            <ion-icon name="close-outline"></ion-icon>
+  <header class="menu_wrapper">
+    <nav class="navbar navbar-expand-lg  fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="../html/index.html">
+          <img src="../images/Asset 1@4xonlyEkata.png" alt=""></a>
+        <button class="navbar-toggler" id="menu" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars navbar-toggler-icon"></i>
         </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../html/index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Logistics
+              </a>
+              <ul class="dropdown-menu shadow " aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../html/warehousing.html">Warehousing</a></li>
+                <li><a class="dropdown-item" href="../html/transportation.html">Transportation</a></li>
+                <li><a class="dropdown-item" href="../html/railfreight.html">Rail Freight</a></li>
+                <li><a class="dropdown-item" href="../html/oceanfreight.html">Ocean Freight</a></li>
+                <li><a class="dropdown-item" href="../html/airfreight.html">Air Freight</a></li>
+                <li><a class="dropdown-item" href="../html/reverselogistics.html">Reverse Logistic</a></li>
+                <li><a class="dropdown-item" href="../html/inplantservices.html">Inplant Service</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                IT & Automation
+              </a>
+              <ul class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../html/processimprovementandautomation.html">Process Improvement &
+                    Automation</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Fright Forwarding
+              </a>
+              <ul class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../html/importservices.html">Import Services</a></li>
+                <li><a class="dropdown-item" href="../html/customclearanceactivity.html">Customer Clearance
+                    Activity</a>
+                </li>
+                <li><a class="dropdown-item" href="../html/exportservices.html">Export Services</a></li>
+                <li><a class="dropdown-item" href="../html/postshipmentservices.html">Post Shipment Service</a></li>
+                <li><a class="dropdown-item" href="../html/licences.html">Licences</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Value Added
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../html/labelling.html">Labelling</a></li>
+                <li><a class="dropdown-item" href="../html/packaging.html">Packaging</a></li>
+                <li><a class="dropdown-item" href="../html/kitting.html">Kitting</a></li>
+                <li><a class="dropdown-item" href="../html/productinstallation.html">Product Installation</a></li>
+                <li><a class="dropdown-item" href="../html/managementinformationsystem.html">Management Information
+                    System</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Project
+              </a>
+              <ul class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../html/charteringservices.html">Chartering Services</a></li>
+                <li><a class="dropdown-item" href="../html/projectlogistics.html">Project Logistics</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-
-        <ul class="navbar-list">
-
-          <li class="navbar-itemdropdown">
-            <a href="index.html" class="navbar-link" data-nav-link>
-              <span>Home</span>
-
-              <ion-icon name="chevron-down"></ion-icon>
-            </a>
-          </li>
-
-          <li class="navbar-item dropdown">
-            <a href="#Logistics" class="navbar-link" data-nav-link>
-              Logistics
-              <!-- <ion-icon name="chevron-down"></ion-icon> -->
-              <!-- <span class="fas fa-chevron-down" aria-hidden="true"></span> -->
-              <!-- <i class="fas fa-angle-down"></i> -->
-            </a>
-            <div class="dropdown-contentL">
-              <ul>
-                <li><a href="warehousing.html" class="drop-text">Warehousing</a></li>
-                <li><a href="transportation.html" class="drop-text">Transportation</a></li>
-                <li><a href="railfreight.html" class="drop-text">Rail Freight</a></li>
-                <li><a href="oceanfreight.html" class="drop-text">Ocean Freight</a></li>
-                <li><a href="airfreight.html" class="drop-text">Air Freight</a></li>
-                <li><a href="reverselogistics.html" class="drop-text">Reverse Logistics</a></li>
-                <li><a href="inplantservices.html" class="drop-text">Inplant Services</a></li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="navbar-item dropdown">
-            <a href="#IT&Automation" class="navbar-link" data-nav-link>
-              <span>IT & Automation</span>
-              <!-- <i class="fas fa-angle-down"></i> -->
-            </a>
-            <div class="dropdown-contentIT">
-              <ul>
-                <li><a href="processimprovementandautomation.html" class="drop-text">Process Improvement & Automation</a></li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="navbar-item dropdown">
-            <a href="#FreightForwarding" class="navbar-link" data-nav-link>
-              <span>Freight Forwarding</span>
-              <!-- <i class="fas fa-angle-down"></i> -->
-              <!-- <ion-icon name="chevron-forward"></ion-icon> -->
-            </a>
-            <div class="dropdown-contentFF">
-              <ul>
-                <li><a href="importservices.html" class="drop-text">Import Services</a></li>
-                <li><a href="exportservices.html" class="drop-text">Export Services</a></li>
-                <li><a href="customclearanceactivity.html" class="drop-text">Custom Clearance Activity</a></li>
-                <li><a href="postshipmentservices.html" class="drop-text">Post Shipment Services</a></li>
-                <li><a href="licences.html" class="drop-text">Licences</a></li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="navbar-item dropdown">
-            <a href="#ValueAdded" class="navbar-link" data-nav-link>
-              <span>Value Added</span>
-              <!-- <i class="fas fa-angle-down"></i> -->
-              <!-- <ion-icon name="chevron-forward"></ion-icon> -->
-            </a>
-            <div class="dropdown-contentVA">
-              <ul>
-                <li><a href="labelling.html" class="drop-text">Labelling</a></li>
-                <li><a href="packaging.html" class="drop-text">Packaging</a></li>
-                <li><a href="kitting.html" class="drop-text">Kitting</a></li>
-                <li><a href="productinstallation.html" class="drop-text">Product Installation</a></li>
-                <li><a href="managementinformationsystem.html" class="drop-text">Management Information System</a></li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="navbar-item dropdown">
-            <a href="#Project" class="navbar-link" data-nav-link>
-              <span>Project</span>
-              <!-- <i class="fas fa-angle-down"></i> -->
-              <!-- <ion-icon name="chevron-forward"></ion-icon> -->
-            </a>
-            <div class="dropdown-contentP">
-              <ul>
-                <li><a href="projectlogistics.html" class="drop-text">Project Logistics</a></li>
-                <li><a href="charteringservices.html" class="drop-text">Chartering Services</a></li>
-              </ul>
-            </div>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
-        <ion-icon name="menu-outline"></ion-icon>
-      </button>
-
-      <div class="overlay" data-nav-toggler data-overlay></div>
-
-    </div>
+      </div>
+    </nav>
   </header>
 
 
@@ -396,11 +373,7 @@
 
         </ul>
 
-      <!-- <div class="footer-bottom">
-        <p class="copyright">
-          &copy; 2022 Transportio. All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>
-        </p>
-      </div> -->
+ 
 
     </div>
   </footer>
@@ -421,10 +394,19 @@
 
 
 
+  <!-- bootstrap js -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
   <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js" defer></script>
+  <script src="../js/script.js" defer></script>
 
   <!-- 
     - ionicon link
