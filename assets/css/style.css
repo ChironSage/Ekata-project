@@ -248,6 +248,8 @@ body {
 
 .section-text {
   line-height: 1.4;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 .btn {
@@ -474,7 +476,7 @@ header::before {
 
 /* navbar scroll */
 .menu_wrapper .scroll-color {
-  background-color: #44d4e1b0;
+  background-color: #44d4e1b9;
   transition: 1s;
   /* opacity: .7; */
   box-shadow: 0px 2px 15px 1px rgb(88, 87, 87);
@@ -487,9 +489,6 @@ header::before {
 /* mobile view dropdown */
 
 /* logo */
-
-
-
 
 .menu_wrapper .navbar-brand img {
 
@@ -889,8 +888,8 @@ ul.service-list.grid-list a {
   background-color: #8b85ab ;
 } */
 .service-card {
-  height: 300px;
-  width: 300px;
+  height: 350px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -915,13 +914,6 @@ ul.service-list.grid-list a {
   text-decoration: none;
 }
 
-/* .service-card .card-icon { margin-block-end: ; } */
-
-.service-card .card-title {
-  color: white;
-  text-transform: uppercase;
-  font-size: 20px;
-}
 
 .service-card .card-title .span {
   display: inline-block;
@@ -1065,10 +1057,10 @@ ul.service-list.grid-list a {
 }
 
 .project-card .h3 {
-  color: black;
+  color: var(--bg-primary-color);
 }
 
-.project-card :is(.card-title, .card-link):is(:hover, :focus) {
+.project-card :is(.card-link):is(:hover, :focus) {
   color: var(--dark-orange);
 }
 
@@ -1231,6 +1223,7 @@ ul.service-list.grid-list a {
 }
 
 .footer-text {
+  color: black;
   margin-block: 10px 30px;
 }
 
@@ -1259,8 +1252,11 @@ ul.service-list.grid-list a {
   margin-block-end: 20px;
 }
 
+
 .footer-link {
   padding-block: 6px;
+  text-decoration: none;
+  color: black;
 }
 
 .footer-bottom {
