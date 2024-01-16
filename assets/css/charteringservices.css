@@ -240,8 +240,9 @@ body {
 
 .section-text {
   line-height: 1.4;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
-
 .btn {
   position: relative;
   color: var(--white);
@@ -978,11 +979,11 @@ button:focus,
     border-block-end: 3px solid var(--dark-orange);
     margin-block-end: 20px;
   }
-
   .footer-link {
     padding-block: 6px;
+    text-decoration: none;
+    color: black;
   }
-
   .footer-bottom {
     padding-block: 40px;
     border-block-start: 1px solid var(--prussian-blue);
