@@ -9,6 +9,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../images/Asset1000x1000globe.ico" type="image/x-icon">
   <title>EKATA - Chartering Services</title>
 
   <!-- 
@@ -21,6 +22,14 @@
   -->
   <link rel="stylesheet" href="../css/charteringservices.css">
 
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--
     - google font link
   -->
@@ -34,7 +43,8 @@
     -fa-angle-down
     Bottom arrow in the nav bar for drop down
   -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xxx" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-xxx" crossorigin="anonymous" />
 
 
   <!-- 
@@ -48,125 +58,92 @@
     - #HEADER
   -->
 
-  <header class="header" data-header>
-    <div class="container">
-
-      <h1>
-        <a href="#" class="logo">EKATA</a>
-      </h1>
-
-      <nav class="navbar" data-navbar>
-
-        <div class="navbar-top">
-          
-        <a href="#" class="logo">EKATA</a>
-
-        <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
-            <ion-icon name="close-outline"></ion-icon>
+  <header class="menu_wrapper">
+    <nav class="navbar navbar-expand-lg  fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="../html/index.html">
+          <img src="../images/Asset 1@4xonlyEkata.png" alt=""></a>
+        <button class="navbar-toggler" id="menu" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars navbar-toggler-icon"></i>
         </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../html/index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Logistics
+              </a>
+              <ul class="dropdown-menu shadow " aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../html/warehousing.html">Warehousing</a></li>
+                <li><a class="dropdown-item" href="../html/transportation.html">Transportation</a></li>
+                <li><a class="dropdown-item" href="../html/railfreight.html">Rail Freight</a></li>
+                <li><a class="dropdown-item" href="../html/oceanfreight.html">Ocean Freight</a></li>
+                <li><a class="dropdown-item" href="../html/airfreight.html">Air Freight</a></li>
+                <li><a class="dropdown-item" href="../html/reverselogistics.html">Reverse Logistic</a></li>
+                <li><a class="dropdown-item" href="../html/inplantservices.html">Inplant Service</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                IT & Automation
+              </a>
+              <ul class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../html/processimprovementandautomation.html">Process Improvement &
+                    Automation</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Fright Forwarding
+              </a>
+              <ul class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../html/importservices.html">Import Services</a></li>
+                <li><a class="dropdown-item" href="../html/customclearanceactivity.html">Customer Clearance
+                    Activity</a>
+                </li>
+                <li><a class="dropdown-item" href="../html/exportservices.html">Export Services</a></li>
+                <li><a class="dropdown-item" href="../html/postshipmentservices.html">Post Shipment Service</a></li>
+                <li><a class="dropdown-item" href="../html/licences.html">Licences</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Value Added
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../html/labelling.html">Labelling</a></li>
+                <li><a class="dropdown-item" href="../html/packaging.html">Packaging</a></li>
+                <li><a class="dropdown-item" href="../html/kitting.html">Kitting</a></li>
+                <li><a class="dropdown-item" href="../html/productinstallation.html">Product Installation</a></li>
+                <li><a class="dropdown-item" href="../html/managementinformationsystem.html">Management Information
+                    System</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Project
+              </a>
+              <ul class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../html/charteringservices.html">Chartering Services</a></li>
+                <li><a class="dropdown-item" href="../html/projectlogistics.html">Project Logistics</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-
-        <ul class="navbar-list">
-
-          <li class="navbar-itemdropdown">
-            <a href="index.html" class="navbar-link" data-nav-link>
-              <span>Home</span>
-
-              <ion-icon name="chevron-down"></ion-icon>
-            </a>
-          </li>
-
-          <li class="navbar-item dropdown">
-            <a href="#Logistics" class="navbar-link" data-nav-link>
-              Logistics
-              <!-- <ion-icon name="chevron-down"></ion-icon> -->
-              <!-- <span class="fas fa-chevron-down" aria-hidden="true"></span> -->
-              <!-- <i class="fas fa-angle-down"></i> -->
-            </a>
-            <div class="dropdown-contentL">
-              <ul>
-                <li><a href="warehousing.html" class="drop-text">Warehousing</a></li>
-                <li><a href="transportation.html" class="drop-text">Transportation</a></li>
-                <li><a href="railfreight.html" class="drop-text">Rail Freight</a></li>
-                <li><a href="oceanfreight.html" class="drop-text">Ocean Freight</a></li>
-                <li><a href="airfreight.html" class="drop-text">Air Freight</a></li>
-                <li><a href="reverselogistics.html" class="drop-text">Reverse Logistics</a></li>
-                <li><a href="inplantservices.html" class="drop-text">Inplant Services</a></li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="navbar-item dropdown">
-            <a href="#IT&Automation" class="navbar-link" data-nav-link>
-              <span>IT & Automation</span>
-              <!-- <i class="fas fa-angle-down"></i> -->
-            </a>
-            <div class="dropdown-contentIT">
-              <ul>
-                <li><a href="processimprovementandautomation.html" class="drop-text">Process Improvement & Automation</a></li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="navbar-item dropdown">
-            <a href="#FreightForwarding" class="navbar-link" data-nav-link>
-              <span>Freight Forwarding</span>
-              <!-- <i class="fas fa-angle-down"></i> -->
-              <!-- <ion-icon name="chevron-forward"></ion-icon> -->
-            </a>
-            <div class="dropdown-contentFF">
-              <ul>
-                <li><a href="importservices.html" class="drop-text">Import Services</a></li>
-                <li><a href="exportservices.html" class="drop-text">Export Services</a></li>
-                <li><a href="customclearanceactivity.html" class="drop-text">Custom Clearance Activity</a></li>
-                <li><a href="postshipmentservices.html" class="drop-text">Post Shipment Services</a></li>
-                <li><a href="licences.html" class="drop-text">Licences</a></li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="navbar-item dropdown">
-            <a href="#ValueAdded" class="navbar-link" data-nav-link>
-              <span>Value Added</span>
-              <!-- <i class="fas fa-angle-down"></i> -->
-              <!-- <ion-icon name="chevron-forward"></ion-icon> -->
-            </a>
-            <div class="dropdown-contentVA">
-              <ul>
-                <li><a href="labelling.html" class="drop-text">Labelling</a></li>
-                <li><a href="packaging.html" class="drop-text">Packaging</a></li>
-                <li><a href="kitting.html" class="drop-text">Kitting</a></li>
-                <li><a href="productinstallation.html" class="drop-text">Product Installation</a></li>
-                <li><a href="managementinformationsystem.html" class="drop-text">Management Information System</a></li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="navbar-item dropdown">
-            <a href="#Project" class="navbar-link" data-nav-link>
-              <span>Project</span>
-              <!-- <i class="fas fa-angle-down"></i> -->
-              <!-- <ion-icon name="chevron-forward"></ion-icon> -->
-            </a>
-            <div class="dropdown-contentP">
-              <ul>
-                <li><a href="projectlogistics.html" class="drop-text">Project Logistics</a></li>
-                <li><a href="charteringservices.html" class="drop-text">Chartering Services</a></li>
-              </ul>
-            </div>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
-        <ion-icon name="menu-outline"></ion-icon>
-      </button>
-
-      <div class="overlay" data-nav-toggler data-overlay></div>
-
-    </div>
+      </div>
+    </nav>
   </header>
 
 
@@ -181,11 +158,11 @@
       -->
 
       <section class="section hero" aria-label="home" id="home"
-        style="background-image: url('../images/chartering-service-hero.jpg')">
+        style="background-image: url('../images/chartering_services_banner.jpg')">
       </section>
 
 
-    
+
 
 
       <!-- 
@@ -195,13 +172,12 @@
         <div class="container">
 
           <figure class="about-banner img-holder" style="--width: 850; --height: 1200;">
-            <img src="../images/chartering-service-about.jpg" width="850" height="1200" loading="lazy" 
+            <img src="../images/chartering-service-about.jpg" width="850" height="1200" loading="lazy"
               class="img-cover">
 
-            
 
-            <img src="../images/about-shape-3a.png" width="400" height="400" loading="lazy" 
-              class="abs-img abs-img-2">
+
+            <img src="../images/about-shape-3a.png" width="400" height="400" loading="lazy" class="abs-img abs-img-2">
           </figure>
 
           <div class="about-content">
@@ -211,7 +187,9 @@
             <p class="h2 section-title">Welcome to Ekata SCS Chartering Services...</p>
 
             <p class="section-text">
-                Here we redefine transportation possibilities through our Chartering Services. As a dynamic element of our comprehensive logistics solutions, Ekata specializes in providing chartering options tailored to your unique shipping needs, ensuring flexibility, reliability, and a seamless journey for your cargo.            
+              Here we redefine transportation possibilities through our Chartering Services. As a dynamic element of our
+              comprehensive logistics solutions, Ekata specializes in providing chartering options tailored to your
+              unique shipping needs, ensuring flexibility, reliability, and a seamless journey for your cargo.
             </p>
 
             <ul class="about-list">
@@ -222,7 +200,9 @@
                 </div>
 
                 <p class="about-text">
-                  <b>Tailored Shipping Solutions:</b> Ekata understands the diversity of shipping requirements. Our Chartering Services provide personalized solutions, offering flexibility in vessel selection, routes, and scheduling to meet your specific cargo needs.
+                  <b>Tailored Shipping Solutions:</b> Ekata understands the diversity of shipping requirements. Our
+                  Chartering Services provide personalized solutions, offering flexibility in vessel selection, routes,
+                  and scheduling to meet your specific cargo needs.
                 </p>
               </li>
 
@@ -232,7 +212,9 @@
                 </div>
 
                 <p class="about-text">
-                  <b>Global Connectivity:</b> Ekata's extensive network ensures global reach. Whether you require short-haul or long-haul chartering services, our logistics experts connect you to the most efficient and reliable options, transcending geographical boundaries.
+                  <b>Global Connectivity:</b> Ekata's extensive network ensures global reach. Whether you require
+                  short-haul or long-haul chartering services, our logistics experts connect you to the most efficient
+                  and reliable options, transcending geographical boundaries.
                 </p>
               </li>
 
@@ -242,7 +224,9 @@
                 </div>
 
                 <p class="about-text">
-                  <b>Efficiency in Operations:</b> Ekata SCS optimizes chartering operations for efficiency. Our team manages the entire process, from vessel selection to negotiations, ensuring that your cargo is transported seamlessly, on time, and within budget.
+                  <b>Efficiency in Operations:</b> Ekata SCS optimizes chartering operations for efficiency. Our team
+                  manages the entire process, from vessel selection to negotiations, ensuring that your cargo is
+                  transported seamlessly, on time, and within budget.
                 </p>
               </li>
 
@@ -252,7 +236,9 @@
                 </div>
 
                 <p class="about-text">
-                  <b>Specialized Cargo Handling:</b> Whether it's heavy machinery, bulk commodities, or project cargo, Ekata's Chartering Services are equipped to handle diverse types of shipments. Benefit from our expertise in coordinating specialized cargo movements.
+                  <b>Specialized Cargo Handling:</b> Whether it's heavy machinery, bulk commodities, or project cargo,
+                  Ekata's Chartering Services are equipped to handle diverse types of shipments. Benefit from our
+                  expertise in coordinating specialized cargo movements.
                 </p>
               </li>
 
@@ -262,7 +248,9 @@
                 </div>
 
                 <p class="about-text">
-                  <b>Cost-Effective Solutions:</b> Ekata prioritizes cost efficiency. Our Chartering Services offer competitive rates without compromising on the quality of service, providing you with a cost-effective option for your chartering needs.
+                  <b>Cost-Effective Solutions:</b> Ekata prioritizes cost efficiency. Our Chartering Services offer
+                  competitive rates without compromising on the quality of service, providing you with a cost-effective
+                  option for your chartering needs.
                 </p>
               </li>
 
@@ -272,7 +260,9 @@
                 </div>
 
                 <p class="about-text">
-                    Experience the Ekata SCS advantage with Chartering Services that set new standards in flexibility, reliability, and efficiency. Trust us to navigate the seas of chartering, ensuring a smooth and successful voyage for your cargo, setting new benchmarks in chartering excellence.                
+                  Experience the Ekata SCS advantage with Chartering Services that set new standards in flexibility,
+                  reliability, and efficiency. Trust us to navigate the seas of chartering, ensuring a smooth and
+                  successful voyage for your cargo, setting new benchmarks in chartering excellence.
                 </p>
               </li>
 
@@ -283,154 +273,161 @@
         </div>
       </section>
 
-  <!-- 
+      <!-- 
     - #FOOTER
   -->
 
-  <footer class="footer">
-    <div class="container">
+      <footer class="footer">
+        <div class="container">
 
-      <div class="footer-top section">
+          <div class="footer-top section">
 
-        <div class="footer-brand">
+            <div class="footer-brand">
 
-          <a href="#" class="logo">EKATA SCS Pvt. Ltd</a>
+              <a href="#" class="logo">EKATA SCS Pvt. Ltd</a>
 
-          <p class="footer-text">
-            Discover a world of unmatched excellence in transportation with Ekata Supply Chain Solutions—your trusted partner in delivering unparalleled service, reliability, and seamless connectivity for every journey.</p>
+              <p class="footer-text">
+                Discover a world of unmatched excellence in transportation with Ekata Supply Chain Solutions—your
+                trusted partner in delivering unparalleled service, reliability, and seamless connectivity for every
+                journey.</p>
 
-        </div>
+            </div>
 
-        <ul class="footer-list">
+            <ul class="footer-list">
 
-          <li>
-            <p class="footer-list-title">Contact Us</p>
-          </li>
+              <li>
+                <p class="footer-list-title">Contact Us</p>
+              </li>
 
-          <li>
-            Email Us:
-            <li>
-              <a href="#email" class="footer-link">ekatascs1@ekata.com</a>
-            </li>
+              <li>
+                Email Us:
+              <li>
+                <a href="#email" class="footer-link">ekatascs1@ekata.com</a>
+              </li>
 
-            <li>
-              <a href="#email" class="footer-link">ekatascs2@ekata.com</a>
-            </li>
-          </li>
+              <li>
+                <a href="#email" class="footer-link">ekatascs2@ekata.com</a>
+              </li>
+              </li>
 
-        </ul>
+            </ul>
 
-        <ul class="footer-list">
+            <ul class="footer-list">
 
-          <li>
-            <p class="footer-list-title">Services</p>
-          </li>
+              <li>
+                <p class="footer-list-title">Services</p>
+              </li>
 
-          <li>
-            <a href="#" class="footer-link">Logistics</a>
-          </li>
+              <li>
+                <a href="#" class="footer-link">Logistics</a>
+              </li>
 
-          <li>
-            <a href="#" class="footer-link">IT & Automation</a>
-          </li>
+              <li>
+                <a href="#" class="footer-link">IT & Automation</a>
+              </li>
 
-          <li>
-            <a href="#" class="footer-link">Freight Forwarding</a>
-          </li>
+              <li>
+                <a href="#" class="footer-link">Freight Forwarding</a>
+              </li>
 
-          <li>
-            <a href="#" class="footer-link">Value Added</a>
-          </li>
+              <li>
+                <a href="#" class="footer-link">Value Added</a>
+              </li>
 
-          <li>
-            <a href="#" class="footer-link">Project</a>
-          </li>
+              <li>
+                <a href="#" class="footer-link">Project</a>
+              </li>
 
-        </ul>
+            </ul>
 
-        <ul class="footer-list">
+            <ul class="footer-list">
 
-          <li>
-            <p class="footer-list-title">Corporate Office</p>
-          </li>
+              <li>
+                <p class="footer-list-title">Corporate Office</p>
+              </li>
 
-          <li>
-            Floor No.: KHATA NO-813/115
-          </li>
+              <li>
+                Floor No.: KHATA NO-813/115
+              </li>
 
-          <li>
-            Building No./Flat No.: PLOT NO-149/2601          
-          </li>
+              <li>
+                Building No./Flat No.: PLOT NO-149/2601
+              </li>
 
-          <li>
-            Name Of Premises/Building: DASH HOUSE
-          </li>
+              <li>
+                Name Of Premises/Building: DASH HOUSE
+              </li>
 
-          <li>
-            Road/Street: BHOI SAHI
-          </li>
+              <li>
+                Road/Street: BHOI SAHI
+              </li>
 
-          <li>
-            Nearby Landmark: BACK SIDE OF Baramunda Bus Stand
-          </li>
+              <li>
+                Nearby Landmark: BACK SIDE OF Baramunda Bus Stand
+              </li>
 
-          <li>
-            Locality/Sub Locality: Baramunda
-          </li>
+              <li>
+                Locality/Sub Locality: Baramunda
+              </li>
 
-          <li>
-            City/Town/Village: Bhubaneswar
-          </li>
+              <li>
+                City/Town/Village: Bhubaneswar
+              </li>
 
-          <li>
-            District: Khordha
-          </li>
+              <li>
+                District: Khordha
+              </li>
 
-          <li>
-            State: Odisha
-          </li>
+              <li>
+                State: Odisha
+              </li>
 
-          <li>
-            PIN Code: 751003 
-          </li>
+              <li>
+                PIN Code: 751003
+              </li>
 
-        </ul>
+            </ul>
 
-      <!-- <div class="footer-bottom">
-        <p class="copyright">
-          &copy; 2022 Transportio. All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>
-        </p>
-      </div> -->
 
-    </div>
-  </footer>
+
+          </div>
+      </footer>
 
 
 
 
 
-  <!-- 
+      <!-- 
     - #BACK TO TOP
   -->
 
-  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
-    <ion-icon name="chevron-up"></ion-icon>
-  </a>
+      <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+        <ion-icon name="chevron-up"></ion-icon>
+      </a>
 
 
 
 
 
-  <!-- 
+      <!-- bootstrap js -->
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+      <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js" defer></script>
+      <script src="../js/script.js" defer></script>
 
-  <!-- 
+      <!-- 
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
